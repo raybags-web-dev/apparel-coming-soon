@@ -43,7 +43,9 @@ button {
   position: absolute;
   display: flex;
   width: 90%;
-  height: 90%;
+  height: 80%;
+  max-width: 1500px;
+  max-height: 900px;
   top: 50%;
   left: 50%;
   overflow: hidden;
@@ -120,7 +122,7 @@ button {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  border: 3px solid gray;
+  border: 3px solid black;
   transition: var(--transition);
 }
 .image-container img {
@@ -258,13 +260,12 @@ button {
   text-align: center;
   transition: var(--transition);
   box-shadow: var(--deep-shadow_2);
-  -webkit-backdrop-filter: blur(100px);
-  backdrop-filter: blur(100px);
 }
 .input-container input:focus {
   outline: none;
   border: 1px solid red;
 }
+
 .input-container input::-webkit-input-placeholder {
   font-size: 1rem;
   color: var(--red-cl);
@@ -272,8 +273,6 @@ button {
   font-style: italic;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  -webkit-backdrop-filter: blur(100px);
-  backdrop-filter: blur(100px);
 }
 .input-container input::-moz-placeholder {
   font-size: 1rem;
@@ -282,7 +281,6 @@ button {
   font-style: italic;
   -moz-transition: var(--transition);
   transition: var(--transition);
-  backdrop-filter: blur(100px);
 }
 .input-container input:-ms-input-placeholder {
   font-size: 1rem;
@@ -291,7 +289,6 @@ button {
   font-style: italic;
   -ms-transition: var(--transition);
   transition: var(--transition);
-  backdrop-filter: blur(100px);
 }
 .input-container input::-ms-input-placeholder {
   font-size: 1rem;
@@ -300,7 +297,6 @@ button {
   font-style: italic;
   -ms-transition: var(--transition);
   transition: var(--transition);
-  backdrop-filter: blur(100px);
 }
 .input-container input::placeholder {
   font-size: 1rem;
@@ -308,8 +304,6 @@ button {
   opacity: 0.7;
   font-style: italic;
   transition: var(--transition);
-  -webkit-backdrop-filter: blur(100px);
-  backdrop-filter: blur(100px);
 }
 .input-container input:focus-within::-webkit-input-placeholder {
   letter-spacing: 3rem;
